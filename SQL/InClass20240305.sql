@@ -255,25 +255,6 @@ FROM product, vendor
 WHERE product.vendorid = vendor.vendorid;
 GO
 
-/* Query 33 */
-
-SELECT productid, productname, vendorname, productprice
-FROM product, vendor;
-GO
-
-/* Query 34 */
-
-SELECT *
-FROM product, vendor;
-GO
-
-/* Query 35 */
-
-SELECT *
-FROM product, vendor
-WHERE product.vendorid = vendor.vendorid;
-GO
-
 /* Query 32a */
 
 SELECT p.productid, p.productname, v.vendorname, p.productprice
@@ -295,6 +276,25 @@ AS pname,v.vendorname AS vname,
 p.productprice AS pprice
 FROM product p, vendor v
 WHERE p.vendorid = v.vendorid;
+GO
+
+/* Query 33 */
+
+SELECT productid, productname, vendorname, productprice
+FROM product, vendor;
+GO
+
+/* Query 34 */
+
+SELECT *
+FROM product, vendor;
+GO
+
+/* Query 35 */
+
+SELECT *
+FROM product, vendor
+WHERE product.vendorid = vendor.vendorid;
 GO
 
 /* Query 36 */
